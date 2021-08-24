@@ -1,0 +1,86 @@
+import turtle
+monty = turtle.Turtle()
+monty.shape("turtle")
+
+# go to starting location
+monty.penup()
+monty.goto(-100,-105)
+
+# start drawing the base
+monty.pendown()
+monty.forward(210)
+monty.left(90)
+monty.forward(100)
+
+# drawing battlements for the main castle
+for i in range (10):
+    monty.forward(10)
+    monty.left(90)
+    monty.forward(10)
+    monty.left(90)
+    monty.forward(10)
+    monty.right(90)
+    monty.forward(10)
+    monty.right(90)
+
+# finishing off the main castle
+monty.forward(10)
+monty.left(90)
+monty.forward(10)
+monty.left(90)
+monty.forward(110)
+
+# drawing a tower
+monty.penup()
+monty.goto(60,5)
+monty.pendown()
+monty.left(180)
+monty.forward(60)
+
+# drawing battlement for the tower
+for i in range (5):
+    monty.forward(10)
+    monty.left(90)
+    monty.forward(10)
+    monty.left(90)
+    monty.forward(10)
+    monty.right(90)
+    monty.forward(10)
+    monty.right(90)
+
+# finishing off the tower
+monty.forward(10)
+monty.left(90)
+monty.forward(10)
+monty.left(90)
+monty.forward(80)
+
+# drawing a flag
+monty.penup()
+monty.goto(5,65)
+monty.pendown()
+monty.left(180)
+monty.forward(50)
+monty.left(120)
+monty.forward(20)
+monty.left(120)
+monty.forward(20)
+
+# drawing windows, window nr 1:
+monty.penup()
+monty.goto(-50,-70)
+monty.left(30)
+monty.pendown()
+for i in range(4):
+  monty.forward(40)
+  monty.left(90)
+
+# window nr 2:
+monty.penup()
+monty.goto(15,-70)
+monty.pendown()
+for i in range(4):
+  monty.forward(40)
+  monty.left(90)
+monty.penup()
+monty.goto(-100,-100)
